@@ -83,7 +83,7 @@
         document.getElementById('average_age').textContent = 'Average age is: ' + average_age;
 
         
-        // Create an array to hold the CSV lines.
+        // Creating an array to hold the CSV lines(csv2Lines is just the placeholder name for this).
         let csv2Lines = [];
 
         // Capitalizing headers for the CSV using the map function.
@@ -106,7 +106,7 @@
             csv2Lines.push(row.join(','));
         }
 
-        // Join all CSV lines with the newline character.
+        // Join all CSV lines with the newline character to revert it back to the csv format.
         let newCsvData = csv2Lines.join('\n');
 
         
